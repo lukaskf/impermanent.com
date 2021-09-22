@@ -1,12 +1,18 @@
 <template>
-  <div class="post">
-    <input type='text' class="comment" v-model="post.comment">
-    <input type='text' class="author" v-model="post.author">
-    <button @click="createPost">change</button>
+  <div class="post flex flex-column">
+    <div class="row">
+      <input type='text' class="comment" v-model="post.comment">
+    </div>
+    <div class="row">
+      <span> - </span>
+      <input type='text' class="author" v-model="post.author">
+      <font-awesome-icon icon="angle-double-right" @click="createPost"/>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   async created() {
     const { data: posts, error } = await this.$supabase
@@ -40,5 +46,29 @@ export default {
 </script>
 
 <style>
+
+.post {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+input  {
+  background: transparent;
+  border: none;
+}
 
 </style>
