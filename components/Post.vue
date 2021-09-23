@@ -1,11 +1,11 @@
 <template>
   <div class="post flex flex-column">
     <div class="row">
-      <input type='text' class="comment" v-model="post.comment">
+      <input type='text' class="comment" v-model="post.comment" maxlength="20">
     </div>
     <div class="row">
       <span> - </span>
-      <input type='text' class="author" v-model="post.author">
+      <input type='text' class="author" v-model="post.author" maxlength="20">
       <font-awesome-icon icon="angle-double-right" @click="createPost"/>
     </div>
   </div>
@@ -53,8 +53,8 @@ export default {
   flex-direction: column;
   width: 700px;
   position: absolute;
-  left: 30%;
-  top: 30%;
+  left: 40%;
+  top: 10%;
   color: grey;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
