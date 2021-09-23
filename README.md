@@ -19,4 +19,4 @@ $ yarn start
 $ yarn generate
 ```
 
-![impermanent.com preview](https://github.com/lukaskf/impermanent.com/blob/main/static/assets/image/preview.png?raw=true)
+![impermanent.com preview](https://github.com/lukaskf/impermanent.com/blob/main/assets/images/preview.png?raw=true)
