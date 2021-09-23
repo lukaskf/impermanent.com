@@ -2,6 +2,10 @@
 
 This is a basic project to use Nuxt and Supabase with an animated background.
 
+It displays only what the last person wrote.
+
+Deployed here: https://naughty-payne-afcad9.netlify.app/
+
 ## Build Setup
 
 ```bash
